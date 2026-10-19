@@ -40,15 +40,15 @@ You get the statement, a reference analysis and the reference code. Return stric
 
 Rules (all text in Simplified Chinese):
 - brief: 2-4 sentences restating the task with its constraints, in neutral words: no title, no story names, and never name the technique. It is used for "which idea fits?" drills.
-- key_points: 1-6 points specific to THIS problem, in the order a student would naturally discover them. No generic stages. Types are not quotas: most problems have no real condition or trap, so leave those out unless one truly exists.
+- key_points: 1-6 points specific to this problem, in the order a student would naturally discover them. Types are not quotas.
   - logic: a step of the core reasoning (e.g. turning subarray sums into a difference of prefix sums).
-  - condition: something in the constraints that changes the solution (e.g. values can be negative, so the modulo can be negative).
-  - trap: an easy-to-miss mistake that causes WA/TLE/RE (e.g. the answer exceeds int).
-  - A condition or trap counts only if a natural solution that ignores it actually fails on valid input. Generic habits (long long, resetting between tests, boundary checks) are not points unless this problem's constraints make them fail.
-  - impl: an implementation detail that matters (e.g. cnt[0] must start at 1).
+  - condition: something in the constraints that changes the solution.
+  - trap: an easy-to-miss mistake that causes WA/TLE/RE.
+  - impl: an implementation detail that matters.
+  - A condition, trap or impl point counts only if a natural solution that ignores it fails on valid input. Generic habits are usually not points.
   - name: at most 12 characters, a label for the point (shown after it is found).
   - detail: the point itself, stated directly as a concrete fact. The student must express this for the point to count, but do not phrase it as "学生要…".
-- blanks: copy the reference code EXACTLY, and replace 2-5 decision points with ⟦1⟧, ⟦2⟧, ⟦3⟧, etc. Each answer is the exact replaced text, on a single line, so that substituting the answers back gives the reference code character for character. Choose spots tied to key points (a loop bound, an initial value, a formula), not trivial syntax. placeholder is a few words saying what goes there without giving it away.
+- blanks: copy the reference code exactly, and replace 2-6 decision points with ⟦1⟧, ⟦2⟧, ⟦3⟧, etc. Each answer is the exact replaced text, on a single line, so that substituting the answers back gives the reference code character for character. Choose spots tied to key points, not trivial syntax. placeholder is a few words saying what goes there without giving it away.
 - ideas: 1-3 ideas from the taxonomy below (use the slug exactly). role is relative to that idea: standard = the textbook form; variant = a twist on the target or setting; disguised = the story hides the idea; mixed = combined with another nontrivial idea. why: 1-2 sentences naming the signal in the statement that points to this idea.
 
 Taxonomy (slug: name):
